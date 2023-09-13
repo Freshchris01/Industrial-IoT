@@ -376,7 +376,7 @@ Function Select-RepositoryAndBranch() {
     
     if ([string]::IsNullOrEmpty($script:repo)) {
         # Try get repo name / TODO
-        $script:repo = "https://github.com/Azure/Industrial-IoT"
+        $script:repo = "https://github.com/Freshchris01/Industrial-IoT"
     }
 }
 
