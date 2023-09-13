@@ -1075,9 +1075,9 @@ Write-Warning "Standard_D4s_v4 VM with Nested virtualization for IoT Edge Eflow 
     $deploymentName = $script:version
 
     # register providers
-    $script:requiredProviders | ForEach-Object {
-        Register-AzResourceProvider -ProviderNamespace $_
-    } | Out-Null
+    # $script:requiredProviders | ForEach-Object {
+    #     Register-AzResourceProvider -ProviderNamespace $_
+    # } | Out-Null
 
     if ($script:whatIfDeployment.IsPresent) {
         Write-Host "Starting what-if deployment..."
