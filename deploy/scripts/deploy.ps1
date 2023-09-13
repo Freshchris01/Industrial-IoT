@@ -941,6 +941,7 @@ Write-Warning "Standard_D4s_v4 VM with Nested virtualization for IoT Edge Eflow 
             # Pick top
             if ($edgeVmSizes.Count -ne 0) {
                 $edgeVmSize = $edgeVmSizes[0].Name
+                $edgeVmSize = "Standard_D2s_v3"
                 Write-Host "Using $($edgeVmSize) as VM size for Linux IoT Edge gateway simulations..."
                 $templateParameters.Add("edgeVmSize", $edgeVmSize)
             }
@@ -978,6 +979,7 @@ Write-Warning "Standard_D4s_v4 VM with Nested virtualization for IoT Edge Eflow 
             # Pick top
             if ($simulationVmSizes.Count -ne 0) {
                 $simulationVmSize = $simulationVmSizes[0].Name
+                $simulationVmSize = "Standard_D2s_v3"
                 Write-Host "Using $($simulationVmSize) as VM size for all OPC PLC simulation host machines..."
                 $templateParameters.Add("simulationVmSize", $simulationVmSize)
             }
